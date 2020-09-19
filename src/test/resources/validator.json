@@ -1,0 +1,24 @@
+{
+  "items":{
+    "anyOf":[
+      {
+        "type":"object",
+        "properties":{
+          "name": {
+            "type":"string"
+          },
+          "id":{
+            "type": "string"
+          },
+          "closed": {
+            "type": "boolean"
+          }
+        },
+        "required":[
+          "name",
+          "id"
+        ]
+      }
+    ]
+  }
+}
