@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+
+}
+
+dependencies {
+
+    //testCompile group: 'junit', name: 'junit', version: '4.12'
+// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+   // api 'org.apache.commons:commons-math3:3.6.1'
+
+    //this dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:29.0-jre'
+
+    testImplementation 'junit:junit:4.13'
+    implementation 'io.rest-assured:rest-assured:4.3.1'
+    //para json schema
+    compile group: 'io.rest-assured', name: 'json-schema-validator', version: '4.3.1'
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.2'
+
+
+}
